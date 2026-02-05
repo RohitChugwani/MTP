@@ -1,0 +1,58 @@
+.interactive-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.object-card {
+  width: 120px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.object-card.selected {
+  border-color: #4caf50;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.5);
+}
+
+.object-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.object-card h3 {
+  margin-top: 5px;
+  font-size: 1rem;
+}
+
+.features-panel {
+  margin-top: 30px;
+  border-top: 2px solid #4caf50;
+  padding-top: 20px;
+}
+
+.features-panel ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.1rem;
+}
+
+.confidence {
+  color: #4caf50;
+  font-weight: bold;
+}

@@ -1,0 +1,29 @@
+.feature-table-wrapper {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.feature-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.feature-table th,
+.feature-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+
+.feature-table th {
+  background-color: #f5f5f5;
+}
+
+.feature-table td {
+  font-size: 0.95rem;
+}
+
+.feature-table .highlight {
+  background-color: #ffe082; /* soft yellow highlight */
+  font-weight: bold;
+}

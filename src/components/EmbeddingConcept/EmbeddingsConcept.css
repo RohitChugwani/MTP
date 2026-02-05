@@ -1,0 +1,79 @@
+.embeddings-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+  padding: 20px;
+  position: relative;
+  min-height: 400px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.content-area {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  min-height: 200px;
+  position: relative;
+}
+
+.object-card {
+  border: 2px solid #4caf50;
+  border-radius: 12px;
+  padding: 10px 20px;
+  width: 150px;
+  transition: transform 0.5s;
+}
+
+.object-card h3 {
+  margin-bottom: 10px;
+}
+
+.embedding-point {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  border: 1px dashed #999;
+}
+
+.dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #4caf50;
+}
+
+.equation {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.progress-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  transition: background 0.3s;
+}
+
+.dot.active {
+  background: #4caf50;
+}

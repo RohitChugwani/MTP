@@ -1,0 +1,79 @@
+.feature-step-container {
+  display: flex;
+  min-height: 100vh;
+  padding: 30px;
+  gap: 30px;
+}
+
+.ai-panel {
+  width: 30%;
+  background: #f1f8e9;
+  padding: 25px;
+  border-radius: 16px;
+  font-size: 1.05rem;
+}
+
+.ai-panel p {
+  margin-bottom: 14px;
+}
+
+.hint {
+  font-style: italic;
+  color: #2e7d32;
+}
+
+.feature-compare {
+  width: 70%;
+  display: flex;
+  gap: 40px;
+}
+
+.object-column {
+  flex: 1;
+  background: #fafafa;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.object-column h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.object-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.object-column li {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.shared {
+  background: #c8e6c9;
+  color: #1b5e20;
+}
+
+.unique {
+  background: #eeeeee;
+  color: #555;
+}
+
+.next-area {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+}
+
+.next-area button {
+  padding: 14px 28px;
+  font-size: 1rem;
+  border-radius: 25px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+}

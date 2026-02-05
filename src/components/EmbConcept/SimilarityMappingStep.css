@@ -1,0 +1,71 @@
+.mapping-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.ai-panel {
+  width: 30%;
+  padding: 30px;
+  background: #eef7ff;
+}
+
+.ai-panel h2 {
+  margin-bottom: 12px;
+}
+
+.ai-panel p {
+  margin-bottom: 10px;
+}
+
+.hint {
+  font-style: italic;
+  color: #1565c0;
+}
+
+.object-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.object-list button {
+  padding: 10px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background: #bbdefb;
+}
+
+.object-list button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.next-btn {
+  margin-top: 30px;
+  padding: 14px;
+  border-radius: 25px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.embedding-map {
+  width: 70%;
+  position: relative;
+  background: #fafafa;
+  border-left: 2px solid #ddd;
+}
+
+.map-dot {
+  position: absolute;
+  padding: 10px 14px;
+  border-radius: 18px;
+  background: #e8f5e9;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}

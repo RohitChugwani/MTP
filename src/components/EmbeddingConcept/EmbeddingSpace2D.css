@@ -1,0 +1,55 @@
+.embedding-space-wrapper {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.object-buttons {
+  margin-bottom: 20px;
+}
+
+.object-buttons button {
+  margin: 4px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+}
+
+.object-buttons button.active {
+  background-color: #81c784;
+}
+
+/* Side-by-side container */
+.embedding-side-by-side {
+  display: flex;
+  gap: 30px;
+}
+
+/* 2D Map */
+.embedding-space {
+  flex: 1;
+  height: 400px;
+  position: relative;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Dot in map */
+.embedding-dot {
+  position: absolute;
+  padding: 6px 10px;
+  background-color: #e8f5e9;
+  border-radius: 12px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Table wrapper */
+.embedding-feature-table-wrapper {
+  flex: 1;
+  overflow-x: auto;
+}
