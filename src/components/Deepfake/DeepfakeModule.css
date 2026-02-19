@@ -1,0 +1,370 @@
+.phase-2 {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.video-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  width: 100%;
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.video-card {           /* EXACT 50% */
+  box-sizing: border-box;
+  background: #0f172a;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+/* Each card takes 50% */
+
+
+/* Label styling */
+.video-label {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+/* Responsive: stack only on small screens */
+@media (max-width: 768px) {
+  .video-compare {
+    flex-direction: row;
+  }
+}
+
+
+
+.clue-box {
+  margin-top: 24px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clue-box h4 {
+  margin-bottom: 6px;
+}
+
+.clue-controls {
+  margin-top: 16px;
+  text-align: center;
+}
+.reason-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.reason-card {
+  background: #111;
+  border: 1px solid #333;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.reason-card:hover {
+  border-color: #666;
+}
+
+.reason-card.active {
+  background: #181818;
+}
+
+.reason-text {
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+.visual-box {
+  width: 280px;
+  height: 220px;
+  border-radius: 16px;
+  background: #f4f6f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual-box.learn {
+  background-image: url("/icons/ai-learning.svg");
+}
+
+.visual-box.patterns {
+  background-image: url("/icons/ai-patterns.svg");
+}
+
+.visual-box.rebuild {
+  background-image: url("/icons/ai-rebuild.svg");
+}
+.pipeline-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.pipeline-dot.active {
+  background: #4a6cf7;
+}
+.question-text {
+  margin-top: 12px;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+.choice-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.choice-buttons button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background: #f5f5f5;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.choice-buttons button:hover {
+  background: #eaeaea;
+  transform: translateY(-2px);
+}
+
+.fade-line {
+  display: block;
+  animation: fadeInUp 0.4s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.next-btn {
+  margin-top: 16px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.next-btn:hover {
+  background: #3b5ce0;
+}
+
+
+.feedback-box {
+  margin-top: 16px;
+  padding: 14px 18px;
+  background: #f6f8fa;
+  border-radius: 12px;
+}
+
+.video-card.large video {
+  max-width: 520px;
+  border-radius: 12px;
+}
+.final-reflection {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.reflection-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+}
+
+.reflection-card h3 {
+  margin-bottom: 10px;
+}
+
+.closing-message {
+  margin-top: 24px;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.clue-valid {
+  color: #1b8a3d;
+  font-weight: 600;
+}
+
+.clue-weak {
+  color: #c97a00;
+}
+
+
+/* BUTTON STACK */
+.choice-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* CLUES */
+.clue-selection {
+  margin-top: 12px;
+}
+
+.clue-option {
+  display: block;
+  margin-bottom: 8px;
+}
+/* =========================
+   PHASE 5 – SPOT THE FAKE
+========================= */
+
+.phase-5 .spot-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+
+.phase-5 .video-panel {
+  flex: 0 0 70%;
+}
+
+.phase-5 .analysis-panel {
+  flex: 0 0 30%;
+}
+
+.phase-5 .analysis-video {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: black;
+}
+
+/* Ensure right-side content stays beside video */
+.phase-5 .analysis-panel > * {
+  margin-top: 0;
+}
+
+.phase-4 {
+  width: 100%;
+  padding: 60px 5%;
+  min-height: 80vh;
+}
+
+/* Main layout */
+.phase4-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+}
+
+/* LEFT SIDE */
+.phase4-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Bigger visual */
+.visual-box {
+  width: 420px;
+  height: 320px;
+  border-radius: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f4f6f8;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Progress bar */
+.progress-bar {
+  width: 80%;
+  height: 10px;
+  background: #e5e7eb;
+  border-radius: 20px;
+  margin-top: 28px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #4a6cf7;
+  transition: width 0.4s ease;
+}
+
+.progress-text {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* RIGHT SIDE */
+.phase4-right {
+  display: flex;
+  justify-content: center;
+}
+
+/* Card styling */
+.pipeline-card {
+  width: 100%;
+  max-width: 520px;
+  padding: 36px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+/* Better typography */
+.pipeline-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .phase4-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .visual-box {
+    width: 100%;
+    height: 260px;
+  }
+}
